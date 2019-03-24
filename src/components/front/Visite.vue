@@ -15,6 +15,7 @@
 
         <el-row type="flex" class="row-bg" justify="space-around">
             <el-col :span="20" :md="16" :lg="12">
+                <p v-if="rucher.history.length === 0"> Aucun historique à afficher pour ce rucher </p>
 
                 <el-collapse>
                     <el-collapse-item v-for="history in rucher.history"

@@ -5,7 +5,7 @@
         <Ruchers v-bind:ruchers="ruchers"/>
 
         <el-row type="flex" class="row-bg" justify="space-around">
-            <h1> Configuration des Ruches et Ruchers</h1>
+            <h1> Configuration des Ruchers</h1>
         </el-row>
         <el-row type="flex" class="row-bg" justify="space-around">
             <h2>Ajouter des ruchers</h2>
@@ -38,7 +38,7 @@
 
         <div class="rucher-list-admin">
             <el-row type="flex" class="row-bg" justify="space-around">
-                <h2>Listes de ruchers</h2>
+                <h2>Liste des ruchers</h2>
             </el-row>
             <el-row type="flex" class="row-bg" justify="space-around">
                 <Rucher v-for="rucher in ruchers"

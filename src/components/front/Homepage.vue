@@ -16,6 +16,8 @@
                     v-bind:lastVisiteDate="rucher._lastVisiteDate | customDate"
                     v-bind:color="rucher._color"
             />
+
+            <p v-if="ruchers.length === 0">Pour commencer, veuillez aller dans la partie Admin pour configurer l'application et enregistrer des ruchers </p>
         </el-row>
     </div>
 </template>

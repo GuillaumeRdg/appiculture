@@ -13,15 +13,15 @@
             </div>
 
             <div>
-                <p>Nombre de ruches: {{nbRuches}}</p>
-                <p>Fréquence de visite: {{frequency}}</p>
-                <p v-if="lastVisiteDate">Dernière Visite: {{lastVisiteDate }}</p>
-                <p v-else>Date de création: {{creationDate }}</p>
+                <p>Nombre de ruches: {{ nbRuches }}</p>
+                <p>Fréquence des visites: {{ frequency }}</p>
+                <p v-if="lastVisiteDate">Dernière visite: {{ lastVisiteDate }}</p>
+                <p v-else>Date de création: {{ creationDate }}</p>
             </div>
 
             <div>
                 <el-button class="btn-visite" @click="visite">
-                    Information & Visite
+                    Historique & Visite
                 </el-button>
             </div>
             <!--<div v-for="history in history">-->
