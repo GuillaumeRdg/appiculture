@@ -3,7 +3,7 @@
         <Ruchers v-bind:ruchers="ruchers"/>
 
         <el-row type="flex" class="row-bg" justify="space-around">
-        <h2>Listes des ruchers à visister</h2>
+        <h2>Liste des ruchers à visiter</h2>
         </el-row>
         <el-row type="flex" class="row-bg" justify="space-around">
             <Rucher v-for="rucher in ruchers"

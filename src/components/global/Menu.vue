@@ -18,11 +18,11 @@
         <el-submenu index="3" class="menu-admin">
             <template slot="title">Admin</template>
             <el-menu-item index="3-1">
-                <router-link to="/admin/configuration">Configuration</router-link>
+                <router-link to="/configuration">Configuration</router-link>
             </el-menu-item>
 
             <el-menu-item index="3-2">
-                <router-link to="/admin/ruchers">Ruches et ruchers</router-link>
+                <router-link to="/ruchers">Ruches et ruchers</router-link>
             </el-menu-item>
 
         </el-submenu>

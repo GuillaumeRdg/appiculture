@@ -25,24 +25,18 @@ export default new Router({
             component: () => import('./components/front/Map'),
             meta: {activeIndex: "2"}
         },
+
         {
-            path: '/admin',
-            name: 'admin',
-            component: () => import('./components/admin/Admin'),
-            children: [
-                {
-                    path: 'configuration',
-                    name: 'configuration',
-                    component: () => import('./components/admin/ConfigurationGlobal'),
-                    meta: {activeIndex: "3-1"}
-                },
-                {
-                    path: 'ruchers',
-                    name: 'ruchers',
-                    component: () => import('./components/admin/ConfigurationRuchers'),
-                    meta: {activeIndex: "3-2"}
-                }
-            ]
+            path: '/configuration',
+            name: 'configuration',
+            component: () => import('./components/admin/ConfigurationGlobal'),
+            meta: {activeIndex: "3-1"}
+        },
+        {
+            path: '/ruchers',
+            name: 'ruchers',
+            component: () => import('./components/admin/ConfigurationRuchers'),
+            meta: {activeIndex: "3-2"}
         }
     ]
 })
